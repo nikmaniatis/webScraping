@@ -1,17 +1,18 @@
 ones entering python shell
 
->>> import requests
->>> from bs4 import BeautifulSoup
+import requests
+from bs4 import BeautifulSoup
 
->>> url = ""
->>> request = requests.get(url) //retrieve web content
->>> request.content              //show html content
+url = ""
+request = requests.get(url) //retrieve web content
+request.content              //show html content
 
->>> soup = BeatifulSoup(request.content) //where "request.content" = html content string
->>> print soup.prettify                      // more readable 
+soup = BeatifulSoup(request.content) //where "request.content" = html content string
+print soup.prettify                      // more readable 
 
->>> r = "" // for example r = "a" for links
->>> data = soup.find_all(r)
+
+r = "" // for example r = "a" for links or "div" for divs etc
+data = soup.find_all(r)
 
 for link in data:
   if "http" in link:

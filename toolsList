@@ -13,5 +13,15 @@ Scraping w/ Python:
          
                $ apt-get install python-bs4
  
- 3. 
+ 
+ 
+ Download web page to make a local clone:
+ 
+ 1. wget ---> https://www.gnu.org/software/wget/
+ 
+    always use: "--no-parent" to avoid cloning the internet
+                 
+                  example:
+                       
+                     $ wget --no-parent http://www.thesite.com
  

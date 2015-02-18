@@ -1,2 +1,2 @@
 # webScraping
-General notes and scripts for web scraping 
+General notes and scripts for web data scraping 

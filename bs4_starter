@@ -1,0 +1,19 @@
+ones entering python shell
+
+>>> import requests
+>>> from bs4 import BeautifulSoup
+
+>>> url = ""
+>>> request = requests.get(url) //retrieve web content
+>>> request.content              //show html content
+
+>>> soup = BeatifulSoup(request.content) //where "request.content" = html content string
+>>> print soup.prettify                      // more readable 
+
+>>> r = "" // for example r = "a" for links
+>>> data = soup.find_all(r)
+
+for link in data:
+  if "http" in link:
+      print"<a href='%s'>%s</a>" %(link.get("href"), link.text)
+
